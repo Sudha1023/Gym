@@ -1,0 +1,621 @@
+
+@import url("./modal.css");
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --mainColor: #ffa500;
+    --secondaryColor: #524d4d;
+}
+
+.flex_col{
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background: var(--secondaryColor);
+  }
+  
+  .header-content {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    width: 15%;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav ul li {
+    margin-top: 10px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+  }
+  
+  .nav ul li a:hover {
+    border-bottom: 3px solid var(--mainColor);
+  }
+  
+  .active {
+    border-bottom: 3px solid var(--mainColor);
+  }
+  
+  .login_button {
+    width: 100px;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid var(--mainColor);
+    outline: none;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 19px;
+  }
+  
+  .login_button:hover {
+    background-color: transparent;
+    color: var(--mainColor);
+  }
+  
+  /* code for hammenu  */
+  
+  .ham {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .close {
+    display: none;
+  }
+
+.container {
+    background-image: url("gym.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.text {
+    padding: 10px 110px;
+
+}
+
+.innerdiv {
+    background: #1e1d1ddb;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 30px;
+
+}
+
+.text h1 {
+    font-size: 40px;
+
+}
+
+.text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.button-div {
+    display: flex;
+    gap: 1rem;
+}
+
+.text button {
+    width: 130px;
+    height: 35px;
+    background-color: orange;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 130px;
+    font-size: 25px;
+}
+
+.text button:hover {
+    border: 1px solid white;
+    background-color: rgb(233, 155, 11);
+    cursor: pointer;
+}
+
+.text .free-trial-btn {
+    width: auto;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--mainColor);
+}
+
+/* label */
+
+.label_section {
+    height: 0;
+    position: relative;
+  }
+  
+  .label {
+    position: absolute;
+    top: -30px;
+    width: 220px;
+    height: 50px;
+    background-color: var(--mainColor);
+    border-radius: 0 5px 0 0;
+    clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 34px;
+    border: 2px solid white;
+  }
+  
+  .label img {
+    width: 13%;
+    object-fit: cover;
+  }
+  
+
+.fitness {
+    background-color: #FFE2AD;
+    padding: 20px 10px;
+}
+
+.fitness h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.inner_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 40px;
+}
+
+.inner_content_two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid var(--mainColor);
+    padding: 20px 10px;
+}
+
+.inner_content_two:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+.inner_content_two:nth-child(2) {
+    border-top: none;
+}
+
+.inner_content_two:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.inner_content_two:nth-child(4) {
+    border-left: none;
+    border-bottom: none;
+}
+
+
+.inner_content_two:nth-child(5) {
+
+    border-bottom: none;
+}
+
+.inner_content_two:nth-child(6) {
+    border-right: none;
+    border-bottom: none;
+}
+
+
+.subscription_section {
+    position: relative;
+    background: url("./Rectangle\ 19.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 10px;
+  }
+  
+  .subscription_section_inner {
+    flex-direction: column;
+  }
+  
+  .subscription_section_inner h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: var(--mainColor);
+    text-align: center;
+  }
+  
+  .subscription_section_inner p {
+    color: #b5aaaa;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .subscription_section_inner_content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .subscription_section_inner_content_innerDiv {
+    background-color: #ffffff33;
+    width: 280px;
+    height: 402px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .subscription_section_button {
+    width: 213px;
+    border: 4px solid var(--mainColor);
+    color: white;
+    background: linear-gradient(0deg, #524d4d, #524d4d),
+      linear-gradient(0deg, #ffa500, #ffa500);
+    font-family: Radio Canada;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 41px;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  
+  
+.fitness_club {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .fintess_club_header {
+    height: 200px;
+    background: url("./images/img_fitness.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .fitness_club_inner {
+    height: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fitness_club_inner_div {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 10px 20px;
+  }
+  .fintess_club_inner_div_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px 20px;
+  }
+  .fintess_club_inner_div_content img {
+    width: 35%;
+  }
+  .fintess_club_inner_div_content h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .fintess_club_inner_div_content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .fintess_club_footer {
+    height: 300px;
+    background-color: var(--mainColor);
+  }
+  
+  /* code for success section */
+  
+  .success_section {
+    background-color: black;
+    padding: 20px 15px;
+  }
+  .success_section_inner {
+    flex-direction: column;
+  }
+  .success_section_inner h2 {
+    font-size: 2.8rem;
+    color: var(--mainColor);
+    text-align: center;
+  }
+  
+  .success_section_inner_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .success_section_inner_content_innerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    gap: 0.5rem;
+  }
+  .success_section_inner_content_innerDiv img {
+    width: 90%;
+  }
+  
+  .success_section_inner_content_innerDiv p {
+    color: var(--mainColor);
+    text-align: center;
+  }
+
+  .footer_contact_section {
+    background: #524d4d;
+    padding: 20px 10px;
+  }
+  .footer_contact_section_inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_contact_section_innerDiv {
+    width: 300px;
+  }
+  .contact_section {
+    width: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .contact_section h2 {
+    color: white;
+  }
+  .contact_section p {
+    color: white;
+  }
+  
+  .footer_contact_section_innerDiv .first_section img {
+    width: 100%;
+  }
+  .footer_contact_section_innerDiv .first_section p {
+    color: var(--mainColor);
+  }
+  
+  .tag_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .tag_section h2 {
+    font-size: 1.3rem;
+    color: var(--mainColor);
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  .popular_tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .popular_tag {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    background: #8d8383;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .show_mobile {
+    display: none;
+  }
+  
+  .orange {
+    color: white;
+    background-color: var(--mainColor);
+  }
+  
+  .icons {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 10px;
+  }
+  .icons img {
+    width: 7%;
+  }
+  
+  /* footer section */
+  
+  .footer {
+    background-color: var(--mainColor);
+    padding: 15px 10px;
+  }
+  
+  .footer h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+
+  @media screen and (max-width: 992px) {
+    .fitness_club_inner_div {
+      width: 90%;
+      top: -150px;
+    }
+  
+    .fintess_club_header {
+      height: 300px;
+    }
+    .fintess_club_footer {
+      height: 650px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+
+    .header .logo {
+        width: 25%;
+      }
+      .ham {
+        display: block;
+      }
+    
+      .ham span {
+        color: white;
+        font-size: 1.8rem;
+      }
+
+      .ham .close{
+        display: none;
+      }
+    
+      .res_mobile {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background: var(--secondaryColor);
+        top: 80px;
+        padding: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in;
+        bottom: 0;
+        height: 90%;
+        width: 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+    
+      .toggle_mobileres {
+        width: 50vw;
+      }
+
+
+    
+
+    /* home section */
+    .innerdiv {
+
+        width: auto;
+    }
+
+    .text {
+        padding: 10px;
+    }
+
+    .inner_content {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .inner_content_two {
+        border: none;
+    }
+
+    .show_mobile {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .show_mobile p {
+        font-size: 1.7rem;
+        color: white;
+        text-align: center;
+      }
+    
+      .hide_mobile {
+        display: none;
+      }
+    
+      /* icons */
+    
+      .icons {
+        display: flex;
+      }
+
+}
+
+@media screen and (max-width: 468px) {
+
+    .header .logo {
+        width: 40%;
+      }
+
+    .inner_content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
